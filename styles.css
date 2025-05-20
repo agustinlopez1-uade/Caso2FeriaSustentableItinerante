@@ -18,6 +18,7 @@ body{
     background-color: var(--fondo);
     font-family: var(--fuente-nunito);
     font-size: 1em;
+    text-align: center;
 }
 
 
@@ -32,6 +33,21 @@ main {
 .logo-miferia{
     width: 50rem;
 }
+
+/* rectangulo texto con imagen */
+.texto-imagen{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    background-color: var(--verde-claro);
+    align-items: center;
+}
+
+.texto-imagen img{
+    width: 400px;
+    height: 300px;
+}
+
 
 /* BARRA NAVEGACIÓN */
 nav{
