@@ -26,7 +26,7 @@ main {
     flex-direction: column;
     align-items: center;
     flex: 1;
-    padding: 2em 1em;
+    padding: 2em 4em;
 }
 
 .logo-miferia{
@@ -38,7 +38,7 @@ nav{
     display: flex;
     justify-content: left;
     align-items: center;
-    padding: 0.5em 0;
+    padding: 1em 3em;
 }
 
 
