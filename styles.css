@@ -34,6 +34,16 @@ main {
     width: 50rem;
 }
 
+h1{
+    color: var(--verde-oscuro);
+}
+
+
+h2{
+    color: var(--verde-oscuro);
+    font-size: 4em;
+}
+
 /* rectangulo texto con imagen */
 .texto-imagen{
     display: flex;
@@ -81,6 +91,41 @@ nav img{
     height: 40px;
 }
 
-h1{
-    color: var(--verde-oscuro);
+
+/* TARJETAS */
+.contenedor-integrantes{
+    display: flex;
+    flex: row;
+    align-items: center;
+}
+
+.contenedor-integrantes img{
+    clip-path: circle();
+}
+
+.nombre-apellido{
+    font-family: var(--fuente-poppins);
+    font-weight: 600;
+}
+
+.rol{
+    font-family: var(--fuente-nunito);
+}
+
+.card a{
+    color: var(--fondo);
+    background-color: var(--verde-oscuro);
+    margin: 0 0.6em;
+    padding: 0.7em 1.2em;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: var(--fuente-poppins);
+    font-weight: 400;
+    font-size: 1em;
+    transition: background-color 0.1s ease;
+}
+
+.card a:hover{
+    background-color: var(--naranja);
+    font-weight: 600;
 }
