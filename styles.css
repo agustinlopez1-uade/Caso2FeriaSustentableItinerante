@@ -9,3 +9,7 @@
 body{
     background-color: var(--fondo);
 }
+
+h1{
+    color: var(--verde-oscuro);
+}
