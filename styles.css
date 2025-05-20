@@ -1,0 +1,11 @@
+:root {
+    --fondo: #f8f5e9;
+    --verde-claro: #9dc08b;
+    --verde-oscuro: #3a7d44;
+    --naranja: #df6d14;
+    --negro: #222;
+}
+
+body{
+    background-color: var(--fondo);
+}
