@@ -4,10 +4,45 @@
     --verde-oscuro: #3a7d44;
     --naranja: #df6d14;
     --negro: #222;
+
+    --fuente-poppins: 'Poppins', sans-serif;
+    --fuente-nunito: 'Nunito', sans-serif;
 }
 
 body{
     background-color: var(--fondo);
+}
+
+/* BARRA NAVEGACIÓN */
+nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+
+nav a{
+    color: var(--negro);
+    margin: 0 0.6em;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.1s ease;
+    font-family: var(--fuente-poppins);
+    font-weight: 600;
+    font-size: 1em;
+}
+
+nav a:hover{
+    background-color: var(--verde-oscuro);
+    color: white;
+    transition: background-color 0.1s ease-out;
+}
+
+nav img{
+    height: 40px;
 }
 
 h1{
