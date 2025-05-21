@@ -45,6 +45,10 @@ h2{
     font-size: 4em;
 }
 
+.texto-naranja {
+    color: #df6d14;
+}
+
 /* rectangulo texto con imagen */
 .fondo-verde{
     background-color: var(--verde-claro);
