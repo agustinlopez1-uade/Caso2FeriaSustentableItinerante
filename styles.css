@@ -53,6 +53,11 @@ h2{
     background-color: var(--verde-claro);
     align-items: center;
     gap: 2em;
+    width: 100vw;
+}
+
+.texto-imagen img, .texto-imagen p{
+    padding: 2em;
 }
 
 .texto-imagen img{
