@@ -102,20 +102,37 @@ nav img{
 .contenedor-integrantes{
     display: flex;
     flex: row;
-    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em 1em;
 }
 
 .contenedor-integrantes img{
     clip-path: circle();
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .nombre-apellido{
     font-family: var(--fuente-poppins);
     font-weight: 600;
+    margin: 0.4em 0 0.2em;
 }
 
 .rol{
     font-family: var(--fuente-nunito);
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 220px;
+    min-height: 400px;
+    justify-content: space-between;
 }
 
 .card a{
