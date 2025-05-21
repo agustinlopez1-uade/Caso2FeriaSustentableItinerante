@@ -125,6 +125,11 @@ nav img{
     height: 40px;
 }
 
+.seleccionado{
+    background-color: var(--verde-oscuro);
+    color: white;
+}
+
 
 /* TARJETAS */
 .contenedor-integrantes{
