@@ -46,14 +46,20 @@ h2{
 }
 
 /* rectangulo texto con imagen */
-.texto-imagen{
-    display: flex;
-    flex-direction: row;
-    padding: 1em;
+.fondo-verde{
     background-color: var(--verde-claro);
-    align-items: center;
-    gap: 2em;
-    width: 100vw;
+    padding: 2em 0;
+}
+
+.texto-imagen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 0 2em;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .texto-imagen img, .texto-imagen p{
@@ -65,6 +71,12 @@ h2{
     height: 300px;
     object-fit: cover;
 }
+
+
+main .fondo-verde { /* fuerza al fondo a ocupar toda la pantalla */
+    width: 100vw;
+}
+
 
 
 /* BARRA NAVEGACIÓN */
