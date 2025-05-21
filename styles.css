@@ -87,6 +87,12 @@ nav a:hover{
     transition: background-color 0.1s ease-out;
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
 nav img{
     height: 40px;
 }
