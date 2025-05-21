@@ -180,3 +180,23 @@ nav img{
     background-color: var(--naranja);
     font-weight: 600;
 }
+
+/* BOTON VERDE */
+.boton-verde {
+    color: var(--fondo);
+    background-color: var(--verde-oscuro);
+    margin: 2em;
+    padding: 0.7em 1.2em;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: var(--fuente-poppins);
+    font-weight: 400;
+    font-size: 1.5em;
+    transition: background-color 0.1s ease;
+
+    cursor: pointer;
+    }
+
+.boton-verde:hover {
+  background-color: var(--naranja);
+}
