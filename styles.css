@@ -9,7 +9,6 @@
     --fuente-nunito: 'Nunito', sans-serif;
 }
 
-
 /* CUERPO */
 body{
     display: flex;
@@ -20,7 +19,6 @@ body{
     font-size: 1em;
     text-align: center;
 }
-
 
 main {
     display: flex;
@@ -38,7 +36,6 @@ h1{
     color: var(--verde-oscuro);
     font-size: 6em;
 }
-
 
 h2{
     color: var(--verde-oscuro);
@@ -86,12 +83,9 @@ h2{
     object-fit: cover;
 }
 
-
 main .fondo-verde { /* fuerza al fondo a ocupar toda la pantalla */
     width: 100vw;
 }
-
-
 
 /* BARRA NAVEGACIÓN */
 nav{
@@ -100,7 +94,6 @@ nav{
     align-items: center;
     padding: 1em 3em;
 }
-
 
 nav a{
     color: var(--negro);
@@ -136,11 +129,10 @@ nav img{
     color: white;
 }
 
-
 /* TARJETAS */
 .contenedor-integrantes{
     display: flex;
-    flex: row;
+    flex-direction: row;
     justify-content: center;
     gap: 2em;
     padding: 2em 1em;
@@ -204,10 +196,111 @@ nav img{
     font-weight: 400;
     font-size: 1.5em;
     transition: background-color 0.1s ease;
-
     cursor: pointer;
-    }
+}
 
 .boton-verde:hover {
   background-color: var(--naranja);
 }
+
+
+/* RESPONSIVE MEDIA QUERYS  */
+
+
+@media (max-width: 1100px) {
+    main {
+        padding: 2em 1em;
+    }
+    h1 {
+        font-size: 4em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    .contenedor-integrantes {
+        gap: 1em;
+    }
+    .card {
+        min-height: 350px;
+        max-width: 180px;
+    }
+    .contenedor-integrantes img {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    nav {
+        padding: 1em;
+    }
+    .nav-links {
+        gap: 0.7em;
+    }
+    main {
+        padding: 1em 0.5em;
+    }
+    .contenedor-integrantes {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    
+    .card {
+        min-height: 320px;
+        max-width: 95vw;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 0.5em;
+    }
+    .nav-links img {
+        height: 30px;
+    }
+    .contenedor-integrantes {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2em;
+        padding: 1em 0.2em;
+    }
+    .card {
+        min-height: unset;
+        max-width: 98vw;
+        width: 100%;
+        padding: 1em 0.5em;
+    }
+    .contenedor-integrantes img {
+        width: 110px;
+        height: 110px;
+    }
+    h1, h2 {
+        font-size: 1.2em;
+    }
+    .texto-imagen {
+        flex-direction: column;
+        padding: 0.5em;
+    }
+    .texto-imagen img {
+        width: 100%;
+        padding: 0.5em 0;
+    }
+    .texto-imagen p {
+        max-width: 100%;
+        padding: 0.5em 0;
+    }
+    
+    .logo-miferia {
+        width: 420px ;
+        height: 250px ;
+    }
+}
+
+
