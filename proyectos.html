@@ -6,6 +6,8 @@
     <title>Mi Feria</title>
     <!-- Estilos y tipografías -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Fuentes Externas -->
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 </head>
 <body>
     <header>
@@ -17,6 +19,20 @@
                 <a href="proyectos.html" class="seleccionado">PROYECTOS</a>
                 <a href="avances.html">AVANCES</a>
             </div>
+            <div class="switch-modo">
+                <label>
+                    <input class='toggle-checkbox' type='checkbox'>
+                    <div class='toggle-slot'>
+                        <div class='sun-icon-wrapper'>
+                            <span class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></span>
+                        </div>
+                        <div class='toggle-button'></div>
+                        <div class='moon-icon-wrapper'>
+                            <span class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></span>
+                        </div>
+                    </div>
+                </label>
+            </div>
         </nav>
     </header>
     <main>
@@ -25,5 +41,12 @@
     </main>
     <footer>
     </footer>
+
+    <!-- Script para el modo oscuro -->
+    <script>
+      document.querySelector('.toggle-checkbox').addEventListener('change', function() {
+        document.body.classList.toggle('modo-oscuro', this.checked);
+      });
+    </script>
 </body>
 </html>
