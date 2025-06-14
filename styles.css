@@ -1,5 +1,6 @@
 :root {
     --fondo: #f8f5e9;
+    --verde-footer: #b0c5a4;
     --verde-claro: #9dc08b;
     --verde-oscuro: #3a7d44;
     --naranja: #df6d14;
@@ -42,6 +43,12 @@ h2{
     font-size: 4em;
 }
 
+h3{
+    color: var(--verde-oscuro);
+    font-size: 3em;
+    margin: 0.2em;
+}
+
 .construccion{
     color: var(--verde-oscuro);
     font-size: 2em;
@@ -51,6 +58,41 @@ h2{
 .texto-naranja {
     color: #df6d14;
 }
+
+.texto-verde {
+    color: #2e7d32;
+}
+
+/* grid actividades */
+.grid-actividades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card-actividad {
+  background-color: var(--verde-claro);
+  padding: 1.5rem;
+  border-radius: 16px;
+  font-family: var(--fuente-poppins);
+}
+
+.card-actividad h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.card-actividad ul {
+  padding-left: 1em;
+  margin: 0;
+}
+
+.card-actividad li {
+  margin-bottom: 0.5em;
+}
+
 
 /* rectangulo texto con imagen */
 .fondo-verde{
@@ -68,7 +110,7 @@ h2{
   margin: 0 auto;
 }
 
-.texto-imagen img, .texto-imagen p{
+.texto-imagen img, .texto-imagen p, .texto-imagen iframe{
     padding: 1em 1em;
 }
 
@@ -83,10 +125,28 @@ h2{
     object-fit: cover;
 }
 
+.texto-imagen iframe{
+    height: 50%;
+    width: 90%;
+}
+
 main .fondo-verde { /* fuerza al fondo a ocupar toda la pantalla */
     width: 100vw;
 }
 
+footer {
+    background-color: var(--verde-footer);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 3em;
+}
+
+footer img{
+    width: 45%;
+    height: auto;
+}
 /* BARRA NAVEGACIÓN */
 nav{
     display: flex;
@@ -335,6 +395,9 @@ body.modo-oscuro nav a {
     h2 {
         font-size: 2.5em;
     }
+    h3{
+        font-size: 2em;
+    }
     .contenedor-integrantes {
         gap: 1em;
     }
@@ -346,6 +409,7 @@ body.modo-oscuro nav a {
         width: 150px;
         height: 150px;
     }
+    
 
 }
 
@@ -374,6 +438,12 @@ body.modo-oscuro nav a {
     h2 {
         font-size: 1.5em;
     }
+    h3{
+        font-size:1.3em;
+    }
+    .grid-actividades {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 600px) {
@@ -399,7 +469,7 @@ body.modo-oscuro nav a {
         width: 110px;
         height: 110px;
     }
-    h1, h2 {
+    h1, h2, h3 {
         font-size: 1.2em;
     }
     .texto-imagen {
