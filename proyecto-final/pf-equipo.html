@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Feria</title>
+    <!-- Estilos y tipografías -->
+    <link rel="stylesheet" href="../styles.css" />
+
+
+
+    <!-- Fuentes Externas-->
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Barra navegación con links-->
+            <div class="nav-links">
+                <img src="../img/logo-miferia-recorte.png" alt="logo mi feria">
+                <a href="pf-inicio.html" >INICIO</a>
+                <a href="pf-proyecto.html">PROYECTO</a>
+                <a href="pf-equipo.html" class="seleccionado">EQUIPO</a>
+                <a href="pf-contacto.html">CONTACTO</a>
+            </div>
+            <div class="switch-modo">
+                <label>
+                    <input class='toggle-checkbox' type='checkbox'>
+                    <div class='toggle-slot'>
+                        <div class='sun-icon-wrapper'>
+                            <span class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></span>
+                        </div>
+                        <div class='toggle-button'></div>
+                        <div class='moon-icon-wrapper'>
+                            <span class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></span>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <h1>EQUIPO MIFERIA</h1>
+
+        <div class="contenedor-integrantes">
+            <div class="card">
+                <img src="../img/fotos perfil/foto-perfil-leonel.png" alt="foto leonel" width="200px">
+                <p class="nombre-apellido">Leonel Emiliano Palavecino</p>
+                <p class="rol">Diseño UX/UI</p>
+                <a href="https://leonelpalavecino510.github.io/Primer-parcial/avisos.html" target="_blank">PORTFOLIO</a>
+            </div>
+
+            <div class="card">
+                <img src="../img/fotos perfil/foto-perfil-tomas.jpeg" alt="foto tomas" width="200px">
+                <p class="nombre-apellido">Lucentini Gregof Fernando Tomas</p>
+                <p class="rol">Programador</p>
+                <a href="https://tomaslucentini057.github.io/PrimerParcial_16872_LucentiniTomas/" target="_blank">PORTFOLIO</a>
+            </div>
+
+            <div class="card">
+                <img src="../img/fotos perfil/foto-perfil-agustin.jpg" alt="foto agustin" width="200px">
+                <p class="nombre-apellido">Agustin Lopez</p>
+                <p class="rol">Maquetador</p>
+                <a href="https://agustinlopez1-uade.github.io/Lopez_-1224122_30032025_HTMLEtiquetas/" target="_blank">PORTFOLIO</a>
+            </div>
+        </div>
+        <div class="texto-imagen">
+            <img src="../img/mapa-sitio-final.jpg" alt="mapa con el sitio final">
+            <button class="boton-verde" href="#">PROTOTIPO</button>
+        </div>
+    </main>
+
+
+    <footer>
+        <div>
+            <img src="../img/logo_uade.svg" alt="logo institución uade">
+        </div>
+        <div>
+            <p>
+                Integrantes: <br>
+                Agustin López <br>
+                Tomás Lucentini <br>
+                Leonel Palavecino <br>
+            </p>
+                https://github.com/agustinlopez1-uade/Caso2FeriaSustentableItinerante
+            <p>
+            <p>   
+                Trabajo grupal- Materia Diseño y Desarrollo Web <br>
+                16872-Grupo N°2
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script para el modo oscuro -->
+    <script>
+    document.querySelector('.toggle-checkbox').addEventListener('change', function() {
+        document.body.classList.toggle('modo-oscuro', this.checked);});
+    </script>
+    <!-- Script para el modo oscuro en la parte verde -->
+
+    <script>
+    document.querySelector('.toggle-checkbox').addEventListener('change', function() {
+        document.body.classList.toggle('modo-oscuro', this.checked);
+        document.querySelectorAll('.fondo-verde').forEach(function(el) {
+            el.classList.toggle('modo-oscuro', document.body.classList.contains('modo-oscuro'));});
+            });
+</script>
+</body>
+</html>

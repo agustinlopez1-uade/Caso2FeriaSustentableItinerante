@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Feria</title>
+    <!-- Estilos y tipografías -->
+    <link rel="stylesheet" href="../styles.css" />
+
+
+    <!-- Fuentes Externas-->
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Barra navegación con links-->
+            <div class="nav-links">
+                <img src="../img/logo-miferia-recorte.png" alt="logo mi feria">
+                <a href="pf-inicio.html" >INICIO</a>
+                <a href="pf-proyecto.html" class="seleccionado">PROYECTO</a>
+                <a href="pf-equipo.html">EQUIPO</a>
+                <a href="pf-contacto.html">CONTACTO</a>
+            </div>
+            <div class="switch-modo">
+                <label>
+                    <input class='toggle-checkbox' type='checkbox'>
+                    <div class='toggle-slot'>
+                        <div class='sun-icon-wrapper'>
+                            <span class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></span>
+                        </div>
+                        <div class='toggle-button'></div>
+                        <div class='moon-icon-wrapper'>
+                            <span class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></span>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>🌿 Una feria con propósito</h1>
+        <p>
+            MiFeria nació como una <b>idea para conectar a las personas con formas de consumo más responsables y sostenibles</b>. 
+            Frente a los problemas ambientales y la falta de espacios accesibles para pequeños productores, pensamos en una feria itinerante que se mueva por distintos barrios, acercando productos locales, talleres y propuestas ecológicas.
+        </p>
+        <p>
+            <span class="texto-naranja"><b>Buscamos generar un cambio positivo</b></span> tanto en el ambiente como en la comunidad, 
+            <span class="texto-naranja"><b>promoviendo hábitos simples pero importantes</b></span>: reducir residuos, apoyar lo hecho cerca y compartir saberes.
+        </p>
+        <p>
+            Lo que hace diferente a MiFeria es que no solo vendemos productos: también creamos un espacio donde aprender, participar y construir juntos un estilo de vida más consciente para cualquier persona sin importar sus condiciones y capacidades.
+        </p>
+
+        <div class="texto-imagen">
+            <div class="bloque-lista">
+                <h3>Buscamos...</h3>
+                <ul class="lista-busqueda">
+                    <li>✅ Promover el consumo responsable y la producción local</li>
+                    <li>✅ Fomentar la educación ambiental en espacios comunitarios</li>
+                    <li>✅ Crear redes entre productores y consumidores</li>
+                    <li>✅ Visibilizar emprendimientos sustentables</li>
+                </ul>
+            </div>
+            <div>
+                <img src="../img/imagen-feria-aerea.png" class="logo-miferia" alt="logo de la web miferia">
+            </div>
+        </div>
+        <h2>¿Cómo funciona MiFeria?</h2>
+        <div>
+            <p>
+                MiFeria se organiza <b>todos los fines de semana y feriados</b> en distintos barrios de Buenos Aires, especialmente en plazas y parques. Los barrios se eligen según el interés de vecinos, organizaciones locales o instituciones que quieran sumarse a la propuesta.
+            </p>
+            <p>
+                Es un <b>espacio completamente abierto: cualquier persona puede participar</b>, ya sea como <b>visitante, feriante, tallerista o colaborador</b>. Los talleres y actividades se planifican con anticipación, buscando siempre ofrecer propuestas prácticas, accesibles y relacionadas con el cuidado del ambiente y el consumo responsable.
+            </p>
+            <p>
+                Si te interesa sumarte, solo tenés que completar el formulario de contacto en nuestra web. ¡Siempre estamos buscando nuevas ideas y manos para seguir creciendo!
+            </p>
+        </div>
+        <button class="boton-verde" href="#">CONTACTO</button>
+        <div>
+            <p><b>Contamos con más de ...</b></p>
+            <ul class="lista-busqueda">
+            <li>✅ <span class="texto-naranja">+50 feriantes por evento</span></li>
+            <li>✅ <span class="texto-naranja">1 tonelada de residuos recuperados</span></li>
+            <li>✅ <span class="texto-naranja">10 barrios recorridos al año</span></li>
+            </ul>
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <img src="../img/logo_uade.svg" alt="logo institución uade">
+        </div>
+        <div>
+            <p>
+                Integrantes: <br>
+                Agustin López <br>
+                Tomás Lucentini <br>
+                Leonel Palavecino <br>
+            </p>
+                https://github.com/agustinlopez1-uade/Caso2FeriaSustentableItinerante
+            <p>
+            <p>   
+                Trabajo grupal- Materia Diseño y Desarrollo Web <br>
+                16872-Grupo N°2
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script para el modo oscuro -->
+    <script>
+    document.querySelector('.toggle-checkbox').addEventListener('change', function() {
+        document.body.classList.toggle('modo-oscuro', this.checked);});
+    </script>
+    <!-- Script para el modo oscuro en la parte verde -->
+
+    <script>
+    document.querySelector('.toggle-checkbox').addEventListener('change', function() {
+        document.body.classList.toggle('modo-oscuro', this.checked);
+        document.querySelectorAll('.fondo-verde').forEach(function(el) {
+            el.classList.toggle('modo-oscuro', document.body.classList.contains('modo-oscuro'));});
+            });
+</script>
+</body>
+</html>

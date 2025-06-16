@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Feria</title>
+    <!-- Estilos y tipografías -->
+    <link rel="stylesheet" href="../styles.css" />
+
+
+
+    <!-- Fuentes Externas-->
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Barra navegación con links-->
+            <div class="nav-links">
+                <img src="../img/logo-miferia-recorte.png" alt="logo mi feria">
+                <a href="pf-inicio.html" >INICIO</a>
+                <a href="pf-proyecto.html">PROYECTO</a>
+                <a href="pf-equipo.html">EQUIPO</a>
+                <a href="pf-contacto.html" class="seleccionado">CONTACTO</a>
+            </div>
+            <div class="switch-modo">
+                <label>
+                    <input class='toggle-checkbox' type='checkbox'>
+                    <div class='toggle-slot'>
+                        <div class='sun-icon-wrapper'>
+                            <span class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></span>
+                        </div>
+                        <div class='toggle-button'></div>
+                        <div class='moon-icon-wrapper'>
+                            <span class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></span>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Contactanos</h1>
+        <p>
+            Mediante este formulario podés formar parte de la organización de MiFeria, mediante los diferentes puestos.
+            Nos contactamos vía gmail. Ante <span class="texto-naranja">cualquier condición y capacidad</span> de alguna persona,
+            <b>comunicar en el formulario para brindarle ayuda a la misma</b>.
+        </p>
+        <p>
+            <b class="texto-verde">Contamos con rampas para sillas de ruedas, código braille, personas guías y traductores de lenguaje de señas.</b>
+        </p>
+
+        <form class="formulario">
+            <label for="nombre"><strong class="texto-verde">Nombre</strong></label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="apellido"><strong class="texto-verde">Apellido</strong></label><br>
+            <input type="text" id="apellido" name="apellido"><br><br>
+
+            <label for="puesto"><strong class="texto-verde">Puesto</strong></label><br>
+            <input type="text" id="puesto" name="puesto"><br><br>
+
+            <label for="discapacidad"><strong class="texto-verde">Discapacidad de la persona</strong></label><br>
+            <input type="text" id="discapacidad" name="discapacidad"><br><br>
+        </form>
+
+    </main>
+
+
+    <footer>
+        <div>
+            <img src="../img/logo_uade.svg" alt="logo institución uade">
+        </div>
+        <div>
+            <p>
+                Integrantes: <br>
+                Agustin López <br>
+                Tomás Lucentini <br>
+                Leonel Palavecino <br>
+            </p>
+                https://github.com/agustinlopez1-uade/Caso2FeriaSustentableItinerante
+            <p>
+            <p>   
+                Trabajo grupal- Materia Diseño y Desarrollo Web <br>
+                16872-Grupo N°2
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script para el modo oscuro -->
+    <script>
+    document.querySelector('.toggle-checkbox').addEventListener('change', function() {
+        document.body.classList.toggle('modo-oscuro', this.checked);});
+    </script>
+    <!-- Script para el modo oscuro en la parte verde -->
+
+    <script>
+    document.querySelector('.toggle-checkbox').addEventListener('change', function() {
+        document.body.classList.toggle('modo-oscuro', this.checked);
+        document.querySelectorAll('.fondo-verde').forEach(function(el) {
+            el.classList.toggle('modo-oscuro', document.body.classList.contains('modo-oscuro'));});
+            });
+</script>
+</body>
+</html>
