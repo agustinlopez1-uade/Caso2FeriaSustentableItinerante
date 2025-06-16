@@ -93,19 +93,8 @@
     <footer>
     </footer>
 
-<!-- Script para el modo oscuro -->
-    <script>
-    document.querySelector('.toggle-checkbox').addEventListener('change', function() {
-        document.body.classList.toggle('modo-oscuro', this.checked);});
-    </script>
-    <!-- Script para el modo oscuro en la parte verde -->
+    <!-- Script para el modo oscuro -->
+    <script src="/scripts/modo-oscuro.js"></script>
 
-    <script>
-    document.querySelector('.toggle-checkbox').addEventListener('change', function() {
-        document.body.classList.toggle('modo-oscuro', this.checked);
-        document.querySelectorAll('.fondo-verde').forEach(function(el) {
-            el.classList.toggle('modo-oscuro', document.body.classList.contains('modo-oscuro'));});
-            });
-</script>
 </body>
 </html>
