@@ -178,19 +178,41 @@ main .fondo-verde { /* fuerza al fondo a ocupar toda la pantalla */
     width: 100vw;
 }
 
-footer {
-    background-color: var(--verde-footer);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5em 3em;
+/* footer */
+.footer {
+  background-color: var(--verde-claro);
+  color: var(--texto);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  font-family: var(--fuente-poppins);
+  font-size: 1em;
 }
 
-footer img{
-    width: 45%;
-    height: auto;
+.footer-logo img {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 1em;
 }
+
+.footer-info {
+  flex: 1 1 300px;
+  max-width: 600px;
+  text-align: right;
+}
+
+.footer-info a {
+  color: var(--verde-oscuro);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
 /* BARRA NAVEGACIÓN */
 nav{
     display: flex;
@@ -301,6 +323,12 @@ nav img{
     font-size: 1.5em;
     transition: background-color 0.1s ease;
     cursor: pointer;
+
+    /* CENTRADO DEL TEXTO */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .boton-verde:hover {
@@ -470,7 +498,9 @@ body.modo-oscuro nav a {
         max-width: 600px;
     }
 
-
+    .footer-info {
+        text-align: center;
+    }
     
 
 }
@@ -505,6 +535,17 @@ body.modo-oscuro nav a {
     }
     .grid-actividades {
         grid-template-columns: 1fr;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-info {
+        max-width: 100%;
+        text-align: center;
     }
 }
 
@@ -549,6 +590,15 @@ body.modo-oscuro nav a {
     .logo-miferia {
         width: 420px ;
         height: 250px ;
+    }
+
+    .footer-logo img {
+        max-width: 140px;
+    }
+
+    .footer {
+        padding: 1.5em;
+        font-size: 0.95em;
     }
 
 /* SWITCH MODO OSCURO use el important porque se me tababa cuando lo modificaba*/
