@@ -729,6 +729,28 @@ body.modo-oscuro nav a {
         aspect-ratio: 16 / 9;
     }
 
+    .fondo-verde .texto-imagen {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .fondo-verde .texto-imagen p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: center;
+        padding: 0 0.5rem;
+    }
+
+    .fondo-verde .texto-imagen iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        border-radius: 8px;
+    }
+
+
 /* SWITCH MODO OSCURO use el important porque se me tababa cuando lo modificaba*/
     .switch-modo {
         position: fixed !important;
