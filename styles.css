@@ -33,6 +33,10 @@ main {
     width: 50rem;
 }
 
+p{
+    font-size: 1.5em;
+}
+
 h1{
     color: var(--verde-oscuro);
     font-size: 6em;
@@ -234,7 +238,6 @@ input[type="text"] {
 main .fondo-verde { /* fuerza al fondo a ocupar toda la pantalla */
     width: 100vw;
 }
-
 
 /* footer */
 .footer {
