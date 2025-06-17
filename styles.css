@@ -255,6 +255,16 @@ nav img{
     color: white;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: var(--verde-oscuro);
+  cursor: pointer;
+}
+
+
 /* TARJETAS */
 .contenedor-integrantes{
     display: flex;
@@ -501,17 +511,25 @@ body.modo-oscuro nav a {
     .footer-info {
         text-align: center;
     }
+
+    nav {
+    padding: 1em 2em;
+    justify-content: space-between;
+    }
+
+    nav a {
+        font-size: 0.95em;
+        padding: 0.8em 1.2em;
+    }
+
+    .nav-links {
+        gap: 1em;
+  }
+}
     
 
-}
 
 @media (max-width: 800px) {
-    nav {
-        padding: 1em;
-    }
-    .nav-links {
-        gap: 0.7em;
-    }
     main {
         padding: 1em 0.5em;
     }
@@ -547,15 +565,39 @@ body.modo-oscuro nav a {
         max-width: 100%;
         text-align: center;
     }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.8em;
+        margin-top: 1em;
+    }
+
+    nav img {
+        margin-bottom: 1em;
+    }
+
+    .menu-toggle {
+        display: block;
+        align-self: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }
 
 @media (max-width: 600px) {
-    nav {
-        padding: 0.5em;
-    }
-    .nav-links img {
-        height: 30px;
-    }
     .contenedor-integrantes {
         flex-direction: column;
         align-items: center;
@@ -599,6 +641,19 @@ body.modo-oscuro nav a {
     .footer {
         padding: 1.5em;
         font-size: 0.95em;
+    }
+
+    nav a {
+        padding: 0.6em 1em;
+        font-size: 0.9em;
+    }
+
+    .nav-links {
+        gap: 0.6em;
+    }
+
+    nav {
+        padding: 1em;
     }
 
 /* SWITCH MODO OSCURO use el important porque se me tababa cuando lo modificaba*/
