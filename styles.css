@@ -525,6 +525,29 @@ body.modo-oscuro nav a {
   background-color: #499b5577;
 }
 
+.card-actividad.modo-oscuro {
+  background-color: #499b5577;
+  color: #fff !important;
+  border-color: #ffffff !important
+}
+
+.card-actividad.modo-oscuro h3 {
+  color: #ffba52ba;
+}
+
+footer.modo-oscuro {
+  background-color: #499b5577;
+  color: #f8f5e9;
+}
+
+body.modo-oscuro #gd {
+  color: #ffba52ba;
+}
+
+body.modo-oscuro h4 {
+  color: #fff !important;
+}
+
 /* RESPONSIVE MEDIA QUERYS  */
 
 
