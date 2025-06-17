@@ -49,6 +49,53 @@ h3{
     margin: 0.2em;
 }
 
+h4 {
+    color: var(--negro);
+    font-size: 2em;
+    margin: 0.2em;
+    font-weight: 250;
+}
+
+.imagen-intermedia {
+    max-width: 50%;
+}
+
+.paleta-color {
+  width: 150px;
+  height: 150px;
+  margin: 2rem auto;
+  border: 1px solid #666;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Colores con las variables que ya tenés definidas en :root */
+.paleta-color.fondo {
+  background-color: var(--fondo);
+}
+
+.paleta-color.verde-footer {
+  background-color: var(--verde-footer);
+}
+
+.paleta-color.verde-claro {
+  background-color: var(--verde-claro);
+}
+
+.paleta-color.verde-oscuro {
+  background-color: var(--verde-oscuro);
+}
+
+.paleta-color.naranja {
+  background-color: var(--naranja);
+}
+
+.paleta-color.negro {
+  background-color: var(--negro);
+}
+
+
+
+
 .construccion{
     color: var(--verde-oscuro);
     font-size: 2em;
